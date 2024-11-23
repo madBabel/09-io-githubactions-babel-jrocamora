@@ -48,4 +48,4 @@ jobs:
         steps:
             - name: 'Deploy'
               run: |
-                echo "Deploying to '${{ github.environment.name }}' using tag '${{ needs.build.outputs.tag }}'."
+                echo "Deploying to '${{ inputs.target }}' using tag '${{ needs.build.outputs.tag }}'."
